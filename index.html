@@ -1,197 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yash Domale | Premium Portfolio</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#070b17;color:#fff}
-nav{position:fixed;top:0;width:100%;display:flex;justify-content:center;gap:30px;padding:18px;background:rgba(7,11,23,.8);backdrop-filter:blur(10px);z-index:999}
-nav a{text-decoration:none;color:#cbd5e1}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 10%;position:relative}
-.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(140px);opacity:.35}
-.hero:before{width:350px;height:350px;background:#2563eb;left:-100px;top:100px}
-.hero:after{width:350px;height:350px;background:#7c3aed;right:-100px;bottom:50px}
-.badge{display:inline-block;padding:10px 16px;border:1px solid #334155;border-radius:999px;background:rgba(255,255,255,.04);width:max-content}
-.name{font-size:clamp(4rem,12vw,8rem);font-weight:900;line-height:.9;margin-top:20px}
-.role{font-size:1.4rem;color:#60a5fa;margin:20px 0}
-.desc{max-width:700px;color:#cbd5e1}
-.btns a{display:inline-block;margin:20px 10px 0 0;padding:14px 22px;border-radius:12px;text-decoration:none}
-.primary{background:#2563eb;color:white}
-.secondary{border:1px solid #475569;color:white}
-section{max-width:1200px;margin:auto;padding:90px 20px}
-h2{font-size:2.2rem;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:25px;border-radius:20px;backdrop-filter:blur(10px)}
-.stat{text-align:center}
-.stat h3{font-size:2.5rem;color:#60a5fa}
-.timeline{border-left:2px solid #334155;padding-left:25px}
-.item{margin-bottom:35px}
-footer{text-align:center;padding:30px;color:#94a3b8;border-top:1px solid #1e293b}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Domle | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0a0a0a; color: #ededed; font-family: 'Inter', sans-serif; }
+        .accent-border { border-color: #262626; }
+        .gradient-text { background: linear-gradient(to right, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
 </head>
-<body>
+<body class="p-6 md:p-12">
 
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-</nav>
+    <!-- Header Section -->
+    <header class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start mb-20">
+        <div>
+            <h1 class="text-6xl font-bold tracking-tighter uppercase mb-2">Yash <span class="text-neutral-500">Domle</span></h1>
+            <p class="text-xl text-neutral-400 font-medium">MCA Graduate & Data Science Enthusiast</p>
+            <p class="text-neutral-500 mt-2"><i class="fas fa-location-dot"></i> Nagpur, Maharashtra, India</p>
+        </div>
+        <div class="mt-8 md:mt-0 flex flex-col items-end">
+            <a href="mailto:domleyash1@gmail.com" class="text-lg hover:text-neutral-400 transition">Get In Touch</a>
+            <p class="text-neutral-600">+91 8483030945</p>
+            <div class="flex gap-4 mt-4 text-2xl">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
 
-<section class="hero">
-<div class="badge">Available — Open to Opportunities</div>
-<div class="name">YASH<br>DOMLE</div>
-<div class="role">Data Analyst / Python Developer</div>
-<p class="desc">
-MCA graduate specializing in Python, SQL, Power BI, Advanced Excel and Machine Learning.
-Passionate about transforming raw data into actionable insights and building intelligent solutions.
-</p>
-<div class="btns">
-<a class="primary" href="#projects">View Projects</a>
-<a class="secondary" href="#contact">Contact Me</a>
-</div>
-</section>
+    <!-- Skills Section -->
+    <section class="max-w-5xl mx-auto mb-20 border-t accent-border pt-10">
+        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-8">01 / Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-neutral-300 font-bold mb-4">Analytical Tools</h3>
+                <ul class="text-neutral-500 space-y-1">
+                    <li>Power BI</li>
+                    <li>Advanced Excel</li>
+                    <li>Accenture Data Simulation</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-neutral-300 font-bold mb-4">Programming</h3>
+                <ul class="text-neutral-500 space-y-1">
+                    <li>Python (Custom YOLOv5)</li>
+                    <li>SQL (Advanced)</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-neutral-300 font-bold mb-4">Databases</h3>
+                <ul class="text-neutral-500 space-y-1">
+                    <li>Microsoft SQL Server</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<section>
-<div class="grid">
-<div class="card stat"><h3>2+</h3><p>Major Projects</p></div>
-<div class="card stat"><h3>4+</h3><p>Certifications</p></div>
-<div class="card stat"><h3>MCA</h3><p>Graduate</p></div>
-</div>
-</section>
+    <!-- Projects Section -->
+    <section class="max-w-5xl mx-auto mb-20 border-t accent-border pt-10">
+        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-8">02 / Projects</h2>
+        
+        <div class="space-y-12">
+            <!-- Project 1 -->
+            <div class="group">
+                <div class="flex justify-between items-baseline mb-4">
+                    <h3 class="text-3xl font-semibold group-hover:text-neutral-400 transition">Weapon Detection System</h3>
+                    <span class="text-neutral-600 font-mono">Python / YOLOv5</span>
+                </div>
+                <p class="text-neutral-400 max-w-2xl">
+                    Utilized YOLOv5 architecture for real-time object detection. Optimized detection speed using GPU acceleration with PyTorch and achieved over 90% accuracy.
+                </p>
+            </div>
 
-<section id="about">
-<h2>About Me</h2>
-<div class="card">
-I am an MCA graduate from Raisoni, Nagpur with strong skills in Python, SQL, Power BI, Advanced Excel and Machine Learning. I enjoy solving business problems through analytics, dashboards and predictive models.
-</div>
-</section>
+            <!-- Project 2 -->
+            <div class="group border-t accent-border pt-8">
+                <div class="flex justify-between items-baseline mb-4">
+                    <h3 class="text-3xl font-semibold group-hover:text-neutral-400 transition">Student Grade Prediction</h3>
+                    <span class="text-neutral-600 font-mono">ML / Random Forest</span>
+                </div>
+                <p class="text-neutral-400 max-w-2xl">
+                    Implemented machine learning algorithms to identify at-risk learners. Created an interactive interface for real-time performance prediction.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="grid">
-<div class="card">
-<h3>Student Grade Prediction</h3><br>
-<p>Built machine learning models using Linear Regression and Random Forest to predict student performance and identify at-risk learners.</p>
-</div>
-<div class="card">
-<h3>Weapon Detection System</h3><br>
-<p>Developed a YOLOv5-based weapon detection system using custom datasets from Roboflow and achieved 90%+ accuracy.</p>
-</div>
-</div>
-</section>
+    <!-- Education Section -->
+    <section class="max-w-5xl mx-auto mb-20 border-t accent-border pt-10">
+        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-8">03 / Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+                <p class="text-neutral-600 font-mono mb-2">2024 — 2026</p>
+                <h3 class="text-xl font-bold">MCA - Computer Science</h3>
+                <p class="text-neutral-500">Raisoni Nagpur | 7.24 CGPA</p>
+            </div>
+            <div>
+                <p class="text-neutral-600 font-mono mb-2">2021 — 2024</p>
+                <h3 class="text-xl font-bold">BCCA</h3>
+                <p class="text-neutral-500">RTM Nagpur | 6.60 CGPA</p>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
-<h2>Skills</h2>
-<div class="grid">
-<div class="card"><b>Analytics</b><br><br>Power BI<br>Advanced Excel<br>Data Visualization</div>
-<div class="card"><b>Programming</b><br><br>Python<br>SQL<br>Machine Learning</div>
-<div class="card"><b>Databases</b><br><br>MySQL<br>Microsoft SQL Server</div>
-</div>
-</section>
+    <!-- Footer -->
+    <footer class="max-w-5xl mx-auto border-t accent-border pt-10 pb-20 flex justify-between items-center">
+        <p class="text-neutral-600">© 2026 Yash Domle</p>
+        <p class="text-neutral-400 italic">Built with intention.</p>
+    </footer>
 
-<section>
-<h2>Certifications</h2>
-<div class="card">
-Excel: Mother of Business Intelligence (Codebasics)<br><br>
-SQL Beginner to Advance for Data Professionals<br><br>
-Accenture Data Analyst Job Simulation (Forage)<br><br>
-Python Certification
-</div>
-</section>
-
-<section id="education">
-<h2>Education</h2>
-<div class="timeline">
-<div class="item">
-<h3>MCA - Computer Science</h3>
-<p>Gh Raisoni Skilltech University, Nagpur • CGPA 7.24</p>
-</div>
-<div class="item">
-<h3>BCCA - Computer Science</h3>
-<p>RTMNU Nagpur University • CGPA 6.60</p>
-</div>
-<div class="item">
-<h3>HSC - Computer Science</h3>
-<p>Prerna College of Commerce • 76%</p>
-</div>
-</div>
-</section>
-
-<section id="contact">
-<h2>Let's Build Something Great.</h2>
-<div class="card">
-📧 domleyash1@gmail.com
-
-📞 +91 8483030945<br><br>
-Nagpur, Maharashtra, India
-</div>
-</section>
-
-<footer>© 2026 Yash Domle • Built with Passion</footer>
 </body>
 </html>
-.name{
-    font-size:clamp(4rem,12vw,8rem);
-    font-weight:900;
-    line-height:.9;
-}
-
-.name .first{
-    display:block;
-    animation:slideLeft 1.2s ease forwards;
-    opacity:0;
-}
-
-.name .last{
-    display:block;
-    animation:slideRight 1.2s ease forwards;
-    opacity:0;
-}
-
-.role{
-    opacity:0;
-    animation:fadeUp 1s ease 1s forwards;
-}
-
-.btns{
-    opacity:0;
-    animation:fadeUp 1s ease 1.4s forwards;
-}
-
-@keyframes slideLeft{
-    from{
-        opacity:0;
-        transform:translateX(-200px);
-    }
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-
-@keyframes slideRight{
-    from{
-        opacity:0;
-        transform:translateX(200px);
-    }
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
