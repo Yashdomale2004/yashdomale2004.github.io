@@ -4,274 +4,126 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yash Domle | Portfolio</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#0f172a;
-    color:white;
-    overflow-x:hidden;
-}
-
-header{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-    position:relative;
-}
-
-header::before{
-    content:"";
-    position:absolute;
-    width:400px;
-    height:400px;
-    background:#3b82f6;
-    border-radius:50%;
-    filter:blur(150px);
-    top:5%;
-    left:5%;
-    opacity:.35;
-}
-
-header::after{
-    content:"";
-    position:absolute;
-    width:350px;
-    height:350px;
-    background:#8b5cf6;
-    border-radius:50%;
-    filter:blur(150px);
-    bottom:5%;
-    right:5%;
-    opacity:.35;
-}
-
-header h1{
-    font-size:4rem;
-    z-index:1;
-}
-
-header h2{
-    color:#38bdf8;
-    margin-top:10px;
-    z-index:1;
-}
-
-header p{
-    max-width:750px;
-    margin-top:20px;
-    line-height:1.8;
-    z-index:1;
-}
-
-.buttons{
-    margin-top:30px;
-    z-index:1;
-}
-
-.buttons a{
-    display:inline-block;
-    text-decoration:none;
-    padding:12px 25px;
-    margin:10px;
-    border-radius:10px;
-    background:#38bdf8;
-    color:white;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.buttons a:hover{
-    transform:translateY(-3px);
-}
-
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px;
-}
-
-.section-title{
-    text-align:center;
-    color:#38bdf8;
-    font-size:2rem;
-    margin-bottom:40px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{background:#0b1120;color:#fff;line-height:1.6}
+.hero{
+min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+align-items:center;text-align:center;padding:20px;position:relative;overflow:hidden}
+.hero:before,.hero:after{
+content:"";position:absolute;border-radius:50%;filter:blur(120px);opacity:.35}
+.hero:before{width:320px;height:320px;background:#3b82f6;left:-50px;top:50px}
+.hero:after{width:320px;height:320px;background:#8b5cf6;right:-50px;bottom:50px}
+h1{font-size:clamp(3rem,8vw,6rem);letter-spacing:4px}
+.subtitle{color:#60a5fa;font-size:1.4rem;margin:10px 0}
+.desc{max-width:760px;margin:20px auto}
+.btns a{
+display:inline-block;padding:12px 22px;margin:8px;border-radius:10px;
+background:#2563eb;color:#fff;text-decoration:none}
+section{max-width:1100px;margin:auto;padding:70px 20px}
+.title{font-size:2rem;color:#60a5fa;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 .card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:15px;
-    margin-bottom:20px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:15px;
-}
-
-.skill{
-    background:#1e293b;
-    padding:15px;
-    text-align:center;
-    border-radius:10px;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact p{
-    margin:10px 0;
-    font-size:18px;
-}
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#020617;
-    color:#94a3b8;
-}
-
-@media(max-width:768px){
-    header h1{
-        font-size:2.8rem;
-    }
-}
+background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+padding:20px;border-radius:16px}
+.stats{text-align:center}
+.stats h3{font-size:2rem;color:#60a5fa}
+footer{text-align:center;padding:30px;background:#020617;color:#94a3b8}
 </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Yash Domle</h1>
+<div class="hero">
+<h1>YASH DOMLE</h1>
+<div class="subtitle">Data Analyst | Python Developer | Power BI Enthusiast</div>
+<p class="desc">
+MCA Graduate skilled in Python, SQL, Power BI, Advanced Excel and Machine Learning.
+Passionate about transforming data into actionable insights and building intelligent solutions.
+</p>
+<div class="btns">
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 
-    <h2>Data Analyst | Python Developer | Power BI Enthusiast</h2>
-
-    <p>
-        MCA Graduate skilled in Python, SQL, Power BI, Advanced Excel and Machine Learning.
-        Passionate about transforming raw data into meaningful insights and building
-        intelligent solutions through analytics and AI.
-    </p>
-
-    <div class="buttons">
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact Me</a>
-    </div>
-</header>
-
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-
-    <div class="card">
-        <p>
-            I am an MCA graduate from Raisoni, Nagpur with a strong foundation in
-            Data Analytics, Python Programming, SQL, Power BI and Advanced Excel.
-            I enjoy solving real-world business problems through data-driven solutions,
-            machine learning models and analytical thinking.
-        </p>
-    </div>
+<section>
+<h2 class="title">Highlights</h2>
+<div class="grid">
+<div class="card stats"><h3>2+</h3><p>Projects</p></div>
+<div class="card stats"><h3>4+</h3><p>Certifications</p></div>
+<div class="card stats"><h3>MCA</h3><p>Graduate</p></div>
+</div>
 </section>
 
-<section id="skills">
-    <h2 class="section-title">Skills</h2>
+<section>
+<h2 class="title">About Me</h2>
+<div class="card">
+I am an MCA graduate from Raisoni, Nagpur with expertise in Python, SQL, Power BI,
+Advanced Excel and Machine Learning. I enjoy solving real-world problems through
+data-driven solutions and analytics.
+</div>
+</section>
 
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Advanced Excel</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Microsoft SQL Server</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Data Visualization</div>
-    </div>
+<section>
+<h2 class="title">Skills</h2>
+<div class="grid">
+<div class="card">Python</div>
+<div class="card">SQL</div>
+<div class="card">Power BI</div>
+<div class="card">Advanced Excel</div>
+<div class="card">MySQL</div>
+<div class="card">MS SQL Server</div>
+<div class="card">Machine Learning</div>
+<div class="card">Data Visualization</div>
+</div>
 </section>
 
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="card">
-        <h3>Student Grade Prediction</h3>
-        <br>
-        <p>
-            Developed machine learning models using Linear Regression and Random Forest
-            algorithms to predict student performance and identify at-risk learners.
-            Created an interactive interface for real-time prediction.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Weapon Detection System</h3>
-        <br>
-        <p>
-            Built a weapon detection system using YOLOv5 and Python. Trained custom
-            datasets through Roboflow, optimized performance using GPU acceleration
-            and achieved more than 90% detection accuracy.
-        </p>
-    </div>
+<h2 class="title">Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>Student Grade Prediction</h3>
+<p>Built ML models using Linear Regression and Random Forest to predict student performance and identify at-risk learners.</p>
+</div>
+<div class="card">
+<h3>Weapon Detection System</h3>
+<p>YOLOv5-based weapon detection project with custom dataset training and 90%+ accuracy.</p>
+</div>
+</div>
 </section>
 
-<section id="certifications">
-    <h2 class="section-title">Certifications</h2>
-
-    <div class="card">
-        <p>• Excel: Mother of Business Intelligence - Codebasics</p>
-        <p>• SQL Beginner to Advance For Data Professionals</p>
-        <p>• Accenture Data Analyst Job Simulation - Forage</p>
-        <p>• Python Certification</p>
-    </div>
+<section>
+<h2 class="title">Certifications</h2>
+<div class="card">
+<ul>
+<li>Excel: Mother of Business Intelligence - Codebasics</li>
+<li>SQL Beginner to Advance for Data Professionals</li>
+<li>Accenture Data Analyst Job Simulation</li>
+<li>Python Certification</li>
+</ul>
+</div>
 </section>
 
-<section id="education">
-    <h2 class="section-title">Education</h2>
-
-    <div class="card">
-        <h3>MCA - Computer Science</h3>
-        <p>Raisoni, Nagpur | CGPA: 7.24</p>
-        <br>
-
-        <h3>BCCA - Computer Science</h3>
-        <p>RTM Nagpur University | CGPA: 6.60</p>
-        <br>
-
-        <h3>HSC - Computer Science</h3>
-        <p>Prerna College of Commerce | 76%</p>
-    </div>
+<section>
+<h2 class="title">Education</h2>
+<div class="card">
+<p><b>MCA - Computer Science</b> | CGPA 7.24</p>
+<p>Raisoni, Nagpur</p><br>
+<p><b>BCCA - Computer Science</b> | CGPA 6.60</p>
+<p>RTM Nagpur University</p><br>
+<p><b>HSC - Computer Science</b> | 76%</p>
+<p>Prerna College of Commerce</p>
+</div>
 </section>
 
 <section id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="card contact">
-        <p>📞 +91 8483030945</p>
-        
+<h2 class="title">Contact</h2>
+<div class="card">
+<p>📞 +91 8483030945</p>
 📧 domleyash1@gmail.com
-        <p>📍 Nagpur, Maharashtra, India</p>
-    </div>
+</div>
 </section>
 
-<footer>
-    © 2026 Yash Domle | Portfolio
-</footer>
-
+<footer>© 2026 Yash Domle Portfolio</footer>
 </body>
 </html>
