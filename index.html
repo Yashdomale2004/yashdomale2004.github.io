@@ -3,113 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Domle | Portfolio</title>
+    <title>Yash Domle | Data Analyst</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body { background-color: #0a0a0a; color: #ededed; font-family: 'Inter', sans-serif; }
-        .accent-border { border-color: #262626; }
-        .gradient-text { background: linear-gradient(to right, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    </style>
 </head>
-<body class="p-6 md:p-12">
+<body class="bg-gray-50 text-gray-900">
 
-    <!-- Header Section -->
-    <header class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start mb-20">
-        <div>
-            <h1 class="text-6xl font-bold tracking-tighter uppercase mb-2">Yash <span class="text-neutral-500">Domle</span></h1>
-            <p class="text-xl text-neutral-400 font-medium">MCA Graduate & Data Science Enthusiast</p>
-            <p class="text-neutral-500 mt-2"><i class="fas fa-location-dot"></i> Nagpur, Maharashtra, India</p>
+    <!-- Navigation -->
+    <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter">YASH DOMLE</h1>
+        <div class="space-x-6 text-sm font-medium">
+            <a href="#projects" class="hover:text-blue-600">Projects</a>
+            <a href="#skills" class="hover:text-blue-600">Skills</a>
+            <a href="#contact" class="hover:text-blue-600">Contact</a>
         </div>
-        <div class="mt-8 md:mt-0 flex flex-col items-end">
-            <a href="mailto:domleyash1@gmail.com" class="text-lg hover:text-neutral-400 transition">Get In Touch</a>
-            <p class="text-neutral-600">+91 8483030945</p>
-            <div class="flex gap-4 mt-4 text-2xl">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-5xl font-extrabold tracking-tight mb-4">Data Analyst & <br>AI Systems Builder</h2>
+        <p class="text-xl text-gray-600 max-w-2xl">Turning complex datasets into actionable business insights. Specialized in SQL, Python, and Power BI.</p>
     </header>
 
-    <!-- Skills Section -->
-    <section class="max-w-5xl mx-auto mb-20 border-t accent-border pt-10">
-        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-8">01 / Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Projects -->
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold mb-8">Projects</h3>
+        <div class="grid gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white p-8 border border-gray-200 rounded-lg shadow-sm">
+                <h4 class="text-xl font-bold mb-2">Weapon Detection System</h4>
+                <p class="text-gray-600 mb-4">Utilized YOLOv5 architecture for real-time object detection. Optimized with GPU acceleration (PyTorch) to achieve 90%+ accuracy.</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold">Python</span>
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold">PyTorch</span>
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold">YOLOv5</span>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white p-8 border border-gray-200 rounded-lg shadow-sm">
+                <h4 class="text-xl font-bold mb-2">Student Grade Prediction</h4>
+                <p class="text-gray-600 mb-4">Implemented Linear Regression and Random Forest models to identify at-risk learners. Created an interactive GUI for real-time predictions.</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold">Python</span>
+                    <span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold">Scikit-Learn</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold mb-8">Skills</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
             <div>
-                <h3 class="text-neutral-300 font-bold mb-4">Analytical Tools</h3>
-                <ul class="text-neutral-500 space-y-1">
+                <h4 class="font-bold mb-2">Analytical</h4>
+                <ul class="text-gray-600 text-sm space-y-1">
                     <li>Power BI</li>
                     <li>Advanced Excel</li>
-                    <li>Accenture Data Simulation</li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-neutral-300 font-bold mb-4">Programming</h3>
-                <ul class="text-neutral-500 space-y-1">
-                    <li>Python (Custom YOLOv5)</li>
-                    <li>SQL (Advanced)</li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-neutral-300 font-bold mb-4">Databases</h3>
-                <ul class="text-neutral-500 space-y-1">
+                <h4 class="font-bold mb-2">Database</h4>
+                <ul class="text-gray-600 text-sm space-y-1">
                     <li>Microsoft SQL Server</li>
+                    <li>SQL</li>
                     <li>MySQL</li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="max-w-5xl mx-auto mb-20 border-t accent-border pt-10">
-        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-8">02 / Projects</h2>
-        
-        <div class="space-y-12">
-            <!-- Project 1 -->
-            <div class="group">
-                <div class="flex justify-between items-baseline mb-4">
-                    <h3 class="text-3xl font-semibold group-hover:text-neutral-400 transition">Weapon Detection System</h3>
-                    <span class="text-neutral-600 font-mono">Python / YOLOv5</span>
-                </div>
-                <p class="text-neutral-400 max-w-2xl">
-                    Utilized YOLOv5 architecture for real-time object detection. Optimized detection speed using GPU acceleration with PyTorch and achieved over 90% accuracy.
-                </p>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="group border-t accent-border pt-8">
-                <div class="flex justify-between items-baseline mb-4">
-                    <h3 class="text-3xl font-semibold group-hover:text-neutral-400 transition">Student Grade Prediction</h3>
-                    <span class="text-neutral-600 font-mono">ML / Random Forest</span>
-                </div>
-                <p class="text-neutral-400 max-w-2xl">
-                    Implemented machine learning algorithms to identify at-risk learners. Created an interactive interface for real-time performance prediction.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="max-w-5xl mx-auto mb-20 border-t accent-border pt-10">
-        <h2 class="text-sm uppercase tracking-widest text-neutral-500 mb-8">03 / Education</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-                <p class="text-neutral-600 font-mono mb-2">2024 — 2026</p>
-                <h3 class="text-xl font-bold">MCA - Computer Science</h3>
-                <p class="text-neutral-500">Raisoni Nagpur | 7.24 CGPA</p>
-            </div>
-            <div>
-                <p class="text-neutral-600 font-mono mb-2">2021 — 2024</p>
-                <h3 class="text-xl font-bold">BCCA</h3>
-                <p class="text-neutral-500">RTM Nagpur | 6.60 CGPA</p>
+                <h4 class="font-bold mb-2">Languages</h4>
+                <ul class="text-gray-600 text-sm space-y-1">
+                    <li>Python</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="max-w-5xl mx-auto border-t accent-border pt-10 pb-20 flex justify-between items-center">
-        <p class="text-neutral-600">© 2026 Yash Domle</p>
-        <p class="text-neutral-400 italic">Built with intention.</p>
+    <!-- Contact -->
+    <footer id="contact" class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <h3 class="text-3xl font-bold mb-4">Let's work together.</h3>
+        <p class="text-gray-600 mb-8">Available for freelance projects and data roles.</p>
+        <a href="mailto:domleyash1@gmail.com" class="bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition">Get In Touch</a>
     </footer>
 
 </body>
